@@ -11,7 +11,7 @@
 			<email>sebastian+dev@ramacher.at</email>
 			<name>Sebastian Ramacher</name>
 		</maintainer>
-		<changelog>http://pwmt.org/projects/zathura/download/</changelog>
+		<changelog>https://pwmt.org/projects/zathura-djvu/download/</changelog>
 		<doc>http://pwmt.org/projects/zathura/</doc>
 	</upstream>
 </pkgmetadata>
