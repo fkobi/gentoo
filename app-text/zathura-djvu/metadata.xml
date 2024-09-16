@@ -13,6 +13,5 @@
 		</maintainer>
 		<changelog>http://pwmt.org/projects/zathura/download/</changelog>
 		<doc>http://pwmt.org/projects/zathura/</doc>
-		<bugs-to>http://bugs.pwmt.org/</bugs-to>
 	</upstream>
 </pkgmetadata>
