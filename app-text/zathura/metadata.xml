@@ -22,7 +22,7 @@
 			<name>Sebastian Ramacher</name>
 		</maintainer>
 		<changelog>https://pwmt.org/projects/zathura/download/</changelog>
-		<doc>https://pwmt.org/projects/zathura/</doc>
+		<doc>https://pwmt.org/projects/zathura/documentation/</doc>
 		<remote-id type="github">pwmt/zathura</remote-id>
 	</upstream>
 </pkgmetadata>
