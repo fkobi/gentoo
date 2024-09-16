@@ -18,5 +18,6 @@
 		<name>Sebastian Ramacher</name>
 	</maintainer>
 	<changelog>https://pwmt.org/projects/zathura-cb/download/</changelog>
+	<remote-id type="github">pwmt/zathura-cb</remote-id>
 	</upstream>
 </pkgmetadata>

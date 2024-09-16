@@ -12,5 +12,6 @@
 		<name>Sebastian Ramacher</name>
 	</maintainer>
 	<changelog>https://pwmt.org/projects/zathura-ps/download/</changelog>
+	<remote-id type="github">pwmt/zathura-ps</remote-id>
 	</upstream>
 </pkgmetadata>

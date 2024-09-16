@@ -11,5 +11,6 @@
 			<email>sebastian+dev@ramacher.at</email>
 			<name>Sebastian Ramacher</name>
 		</maintainer>
+		<remote-id type="github">pwmt/zathura-djvu</remote-id>
 	</upstream>
 </pkgmetadata>
