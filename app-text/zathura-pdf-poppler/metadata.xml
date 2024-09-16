@@ -13,7 +13,7 @@
 		</maintainer>
 		<changelog>https://pwmt.org/projects/zathura/download/</changelog>
 		<bugs-to>https://git.pwmt.org/groups/pwmt/-/issues</bugs-to>
-		<doc lang="en">https://pwmt.org/projects/zathura/</doc>
+		<doc>https://pwmt.org/projects/zathura/</doc>
 		<remote-id type="github">pwmt/zathura-pdf-poppler</remote-id>
 	</upstream>
 </pkgmetadata>
