@@ -12,7 +12,6 @@
 			<name>Sebastian Ramacher</name>
 		</maintainer>
 		<changelog>https://pwmt.org/projects/zathura-pdf-poppler/download/</changelog>
-		<doc>https://pwmt.org/projects/zathura/</doc>
 		<remote-id type="github">pwmt/zathura-pdf-poppler</remote-id>
 	</upstream>
 </pkgmetadata>

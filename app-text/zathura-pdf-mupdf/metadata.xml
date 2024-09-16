@@ -19,7 +19,6 @@
 		<name>Sebastian Ramacher</name>
 		</maintainer>
 		<changelog>https://pwmt.org/projects/zathura-pdf-mupdf/download/</changelog>
-		<doc>https://github.com/pwmt/zathura-pdf-mupdf/blob/develop/README.md</doc>
 		<bugs-to>https://github.com/pwmt/zathura-pdf-mupdf/issues</bugs-to>
 		<remote-id type="github">pwmt/zathura-pdf-mupdf</remote-id>
 	</upstream>
