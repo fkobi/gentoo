@@ -33,7 +33,6 @@
     <flag name="rdma">Enable RDMA support via <pkg>sys-cluster/rdma-core</pkg></flag>
     <flag name="rgw-lua">Rados Gateway's support for dynamically adding lua packagess</flag>
     <flag name="system-boost">Use system <pkg>dev-libs/boost</pkg> instead of the bundled one</flag>
-    <flag name="io-uring">Build with support for <pkg>sys-libs/liburing</pkg></flag>
     <flag name="zbd">Enable <pkg>sys-block/libzbd</pkg> bluestore backend</flag>
     <flag name="xfs">Add xfs support</flag>
   </use>

@@ -146,6 +146,7 @@ inotify - Enable inotify filesystem monitoring support
 introspection - Add support for GObject based introspection
 iodbc - Add support for iODBC library
 ios - Enable support for Apple's iDevice with iOS operating system (iPad, iPhone, iPod, etc)
+io-uring - Enable the use of io_uring system calls for efficient async IO
 ipod - Enable support for iPod device access
 ipv6 - Add support for IP version 6
 jack - Add support for the JACK Audio Connection Kit
