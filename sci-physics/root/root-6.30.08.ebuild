@@ -17,7 +17,7 @@ LICENSE="LGPL-2.1 freedist MSttfEULA LGPL-3 libpng UoI-NCSA"
 IUSE="+X aqua +asimage cuda cudnn +davix debug +examples fits fftw fortran
 	+gdml graphviz +gsl +http jupyter libcxx +minuit mpi mysql odbc +opengl
 	oracle postgres pythia6 pythia8 +python qt5 qt6 R +roofit +root7 shadow
-	sqlite +ssl +tbb test +tmva +unuran uring vc +xml xrootd"
+	sqlite +ssl +tbb test +tmva +unuran io-uring vc +xml xrootd"
 
 if [[ ${PV} =~ "9999" ]] ; then
 	inherit git-r3
@@ -48,7 +48,7 @@ REQUIRED_USE="
 	qt6? ( root7 http )
 	roofit? ( minuit )
 	tmva? ( gsl python )
-	uring? ( root7 )
+	io-uring? ( root7 )
 "
 
 CDEPEND="
@@ -120,7 +120,7 @@ CDEPEND="
 			dev-python/numpy[${PYTHON_USEDEP}]
 		')
 	)
-	uring? ( sys-libs/liburing:= )
+	io-uring? ( sys-libs/liburing:= )
 	vc? ( >=dev-libs/vc-1.4.4:= )
 	xml? ( dev-libs/libxml2:2= )
 	xrootd? ( net-libs/xrootd:0= )
@@ -308,7 +308,7 @@ src_configure() {
 		-Dtmva-rmva=$(usex R)
 		-Dtmva-sofie=OFF
 		-Dunuran=$(usex unuran)
-		-During=$(usex uring)
+		-During=$(usex io-uring)
 		-Dvc=$(usex vc)
 		-Dvdt=OFF
 		-Dveccore=OFF
