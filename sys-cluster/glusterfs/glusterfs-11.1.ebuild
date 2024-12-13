@@ -15,7 +15,7 @@ LICENSE="|| ( GPL-2 LGPL-3+ )"
 SLOT="0/${PV%%.*}"
 KEYWORDS="amd64 ~arm ~arm64 ~loong ~ppc ppc64 ~riscv x86"
 
-IUSE="debug emacs +fuse georeplication ipv6 +libtirpc rsyslog selinux static-libs tcmalloc test +uring xml"
+IUSE="debug emacs +fuse georeplication ipv6 +libtirpc rsyslog selinux static-libs tcmalloc test +io-uring xml"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
 	georeplication? ( xml )
@@ -47,7 +47,7 @@ RDEPEND="
 	!libtirpc? ( elibc_glibc? ( sys-libs/glibc[rpc(-)] ) )
 	selinux? ( sec-policy/selinux-glusterfs )
 	tcmalloc? ( dev-util/google-perftools )
-	uring? ( sys-libs/liburing:= )
+	io-uring? ( sys-libs/liburing:= )
 	xml? ( dev-libs/libxml2 )
 "
 DEPEND="
@@ -106,7 +106,7 @@ src_configure() {
 		$(use_enable georeplication) \
 		$(use_enable static-libs static) \
 		$(use_enable test cmocka) \
-		$(use_enable uring linux-io-uring) \
+		$(use_enable io-uring linux-io-uring) \
 		$(use_enable xml xml-output) \
 		$(usex ipv6 --with-ipv6-default "") \
 		$(usex libtirpc "" --without-libtirpc) \

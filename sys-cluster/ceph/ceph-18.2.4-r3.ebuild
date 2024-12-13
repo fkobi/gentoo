@@ -30,7 +30,7 @@ IUSE="
 	babeltrace +cephfs custom-cflags diskprediction dpdk fuse grafana
 	jemalloc jaeger kafka kerberos ldap lttng +mgr +parquet pmdk rabbitmq
 	+radosgw rbd-rwl rbd-ssd rdma rgw-lua selinux +ssl spdk +sqlite +system-boost
-	systemd +tcmalloc test +uring xfs zbd
+	systemd +tcmalloc test +io-uring xfs zbd
 "
 
 IUSE+="$(printf "cpu_flags_x86_%s\n" ${CPU_FLAGS_X86[@]})"
@@ -109,7 +109,7 @@ DEPEND="
 	spdk? ( dev-util/cunit )
 	sqlite? ( dev-db/sqlite:= )
 	system-boost? ( dev-libs/boost:=[context,python,${PYTHON_USEDEP},zlib] )
-	uring? ( sys-libs/liburing:= )
+	io-uring? ( sys-libs/liburing:= )
 	xfs? ( sys-fs/xfsprogs:= )
 	zbd? ( sys-block/libzbd:= )
 "
@@ -330,8 +330,8 @@ ceph_src_configure() {
 		-DWITH_RBD_SSD_CACHE:BOOL=$(usex rbd-ssd)
 		-DWITH_SYSTEMD:BOOL=$(usex systemd)
 		-DWITH_TESTS:BOOL=$(usex test)
-		-DWITH_LIBURING:BOOL=$(usex uring)
-		-DWITH_SYSTEM_LIBURING:BOOL=$(usex uring)
+		-DWITH_LIBURING:BOOL=$(usex io-uring)
+		-DWITH_SYSTEM_LIBURING:BOOL=$(usex io-uring)
 		-DWITH_LIBCEPHSQLITE:BOOL=$(usex sqlite)
 		-DWITH_XFS:BOOL=$(usex xfs)
 		-DWITH_ZBD:BOOL=$(usex zbd)
