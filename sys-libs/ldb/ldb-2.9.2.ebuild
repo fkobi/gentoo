@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_REQ_USE="threads(+)"
 inherit python-single-r1 waf-utils multilib-minimal
 
@@ -116,9 +116,7 @@ multilib_src_configure() {
 	# We "use" bundled cmocka when we're not running tests as we're
 	# not using it anyway. Means we avoid making users install it for
 	# no reason. bug #802531
-	if ! use test; then
-		bundled_libs="cmocka,${bundled_libs}"
-	fi
+	use test || bundled_libs="cmocka,${bundled_libs}"
 
 	local myconf=(
 		$(usex ldap '' --disable-ldap)
