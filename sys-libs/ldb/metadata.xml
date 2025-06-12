@@ -6,9 +6,6 @@
 		<name>Samba</name>
 	</maintainer>
 	<use>
-		<flag name="doc">Builds documentation</flag>
-		<flag name="ldap">Enable LDAP support</flag>
-		<flag name="lmdb">Enable LMDB backend</flag>
-		<flag name="python">Enable Python support</flag>
+		<flag name="lmdb">Enable <pkg>dev-db/lmdb</pkg> backend</flag>
 	</use>
 </pkgmetadata>
