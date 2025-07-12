@@ -34,10 +34,12 @@
 		<flag name="pps">Support for the Linux Pulse Per Second (PPS) interface</flag>
 		<flag name="refclock">Support for reference clocks</flag>
 		<flag name="rtc">Support for the Linux Real Time Clock interface</flag>
-		<flag name="sechash">Enable support for hashes other than MD5</flag>
+		<flag name="sechash">Support hashes other than MD5</flag>
 		<flag name="libtomcrypt">Support different hashes via <pkg>dev-libs/libtomcrypt</pkg></flag>
 	</use>
 	<upstream>
+		<changelog>https://chrony-project.org/news.html</changelog>
+		<doc>https://chrony-project.org/documentation.html</doc>
 		<remote-id type="cpe">cpe:/a:chrony_project:chrony</remote-id>
 		<remote-id type="gitlab">chrony/chrony</remote-id>
 	</upstream>
